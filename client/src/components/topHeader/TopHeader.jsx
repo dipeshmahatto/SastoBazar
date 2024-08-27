@@ -1,5 +1,6 @@
 import React from "react";
-import {FaViber} from "react-icons/fa6"
+import { FaViber } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 const TopHeader = () => {
   return (
@@ -10,17 +11,23 @@ const TopHeader = () => {
           <span className="text-sm text-gray-700">Customer Support</span>
         </div>
         <div className="flex items-center space-x-2">
-          <a href="#" className="text-sm text-gray-700 hover:text-blue-500">
+          <NavLink
+            to="/sastobazar-login"
+            className="py-1 px-2 text-sm text-seconds"
+          >
             Login
-          </a>
+          </NavLink>
           <span className="text-sm text-gray-700">/</span>
-          <a href="#" className="text-sm text-gray-700 hover:text-blue-500">
+          <NavLink
+            to="/sastobazar-Register"
+            className="py-1 px-2 text-sm text-seconds"
+          >
             Register
-          </a>
+          </NavLink>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default TopHeader;
