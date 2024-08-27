@@ -1,13 +1,15 @@
 import React from "react";
 import Logo from "../../assets/image/loggo.png";
 import { FiSearch, FiHeart, FiShoppingCart } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <header className="font-poppins flex items-center justify-evenly p-4 bg-white-200">
-        <div className="flex itmes-center">
+        <div className="flex itmes-center"> <NavLink to="/">
           <img src={Logo} alt="SastoBazar" className="h-12 w-full pr-2" />
+          </NavLink>
         </div>
         <div className="flex items-center justify-center w-2/5 relative">
           <input

@@ -1,8 +1,7 @@
 import React from "react";
 import Logo from "../../assets/image/loggo.png";
-import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -87,12 +86,12 @@ const Footer = () => {
                 </span>
                 <ul className="mt-2 p-0 m-0 text-gray-800">
                   <li className="flex">
-                    <a
-                      href=""
+                    <NavLink
+                      to="/sastobazar-support"
                       className="no-underline text-gray-800 py-2 hover:text-orange-600 duration-300 ease-in-out"
                     >
                       Customer Support
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="flex">
                     <a

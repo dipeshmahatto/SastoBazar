@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import TopHeader from "./components/topHeader/TopHeader";
 import Home from "./pages/home/Home";
 import Login from "./pages/user/login/Login";
+import Register from "./pages/user/register/Register";
+import Support from "./pages/user/support/Support";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sastobazar-login" element={<Login />} />
+          <Route path="/sastobazar-register" element={<Register />} />
+          <Route path="/sastobazar-support" element={<Support />} />
         </Routes>
         <Footer />
       </Router>
