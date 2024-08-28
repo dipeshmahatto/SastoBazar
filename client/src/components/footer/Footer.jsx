@@ -6,36 +6,31 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="w-full flex justify-center py-12 mt-8">
+      <div className="w-full flex justify-evenly py-12 mt-8">
         <footer className="font-poppins flex flex-col container w-full">
           <div className="flex justify-between">
-            <div className="max-w-sm">
+            <div className="max-w-md">
               <img
                 src={Logo}
                 alt="SastoBazar"
                 className="h-full max-h-12 w-56 pr-2 mb-7"
               />
               <p className="text-gray-800 text-base">
-                Lorem ipsum dolor sit amet consectet, adipis elit. Ipsam enim
-                omnis soluta non nam hic assumenda!
+                <h2 className="text-gray-900 font-medium my-3">
+                  SastoBazar - Your Affordable Online Shopping Destination
+                  Explore{" "}
+                </h2>
+                "Quality products at unbeatable prices with secure payments,
+                fast delivery, and exceptional service."
               </p>
-              <div className="flex gap-3 mt-4">
-                <a
-                  href=""
-                  className="text-gray-800 hover:text-cyan-500 duration-300"
-                >
+              <div className="flex gap-8 mt-4">
+                <a href="" className="text-cyan-500 duration-300">
                   <FaTwitter className="h-6 w-6" />
                 </a>
-                <a
-                  href=""
-                  className="text-gray-800 hover:text-blue-600 duration-300"
-                >
+                <a href="" className="text-blue-600 duration-300">
                   <FaFacebook className="h-6 w-6" />
                 </a>
-                <a
-                  href=""
-                  className="text-gray-800 hover:text-rose-600 duration-300"
-                >
+                <a href="" className="text-rose-600 duration-300">
                   <FaInstagram className="h-6 w-6" />
                 </a>
               </div>

@@ -8,7 +8,10 @@ const TopHeader = () => {
       <div className="font-poppins pt-1 border-b p-2 px-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <FaViber className="text-blue-500" />
-          <span className="text-sm text-gray-700">Customer Support</span>
+
+          <NavLink to="/sastobazar-support" className="text-sm text-gray-700">
+            Customer Support
+          </NavLink>
         </div>
         <div className="flex items-center space-x-2">
           <NavLink
