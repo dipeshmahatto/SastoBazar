@@ -9,6 +9,7 @@ import Home from "./pages/home/Home";
 import Login from "./pages/user/login/Login";
 import Register from "./pages/user/register/Register";
 import Support from "./pages/user/support/Support";
+import Cart from "./pages/user/cart/Cart";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/sastobazar-login" element={<Login />} />
           <Route path="/sastobazar-register" element={<Register />} />
           <Route path="/sastobazar-support" element={<Support />} />
+          <Route path="/sastobazar-cart" element={<Cart />} />
         </Routes>
         <Footer />
       </Router>
