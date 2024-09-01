@@ -27,7 +27,7 @@ const Footer = () => {
                 <a href="" className="text-cyan-500 duration-300">
                   <FaTwitter className="h-6 w-6" />
                 </a>
-                <a href="" className="text-blue-600 duration-300">
+                <a href="https://www.facebook.com" className="text-blue-600 duration-300">
                   <FaFacebook className="h-6 w-6" />
                 </a>
                 <a href="" className="text-rose-600 duration-300">
@@ -42,12 +42,12 @@ const Footer = () => {
                 </span>
                 <ul className="mt-2 p-0 m-0 text-gray-800">
                   <li className="flex">
-                    <a
-                      href=""
+                    <NavLink 
+                      to="/about-us-details"
                       className="no-underline text-gray-800 py-2 hover:text-orange-600 duration-300 ease-in-out"
                     >
                       About
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="flex">
                     <a
