@@ -12,7 +12,7 @@ const Header = () => {
           <NavLink to="/">
             <img src={Logo} alt="SastoBazar" className="h-12 w-full pr-2" />
           </NavLink>
-        </div>
+        </div>      
         <div className="flex items-center justify-center w-2/5 relative">
           <input
             type="text"

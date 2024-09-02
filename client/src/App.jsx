@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./index.css";
@@ -29,7 +29,7 @@ function App() {
           <Route path="/sastobazar-cart" element={<Cart />} />
           <Route path="/about-us-details" element={<AboutUs />} />
           <Route path="/more-info" element={<LearnMore />} />
-          <Route path="*" element={<PageNotFound />}/>
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </Router>

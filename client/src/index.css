@@ -2,16 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-    .animate-moveUpDown{
+@layer utilities {
+    .animate-moveUpDown {
         animation: moveUpDown 2s ease-in-out infinite alternate-reverse both;
     }
 }
-@keyframes moveUpDown{
-    0%{
+
+@keyframes moveUpDown {
+    0% {
         transform: translateY(10px);
     }
-    100%{
+
+    100% {
         transform: translateY(-10px);
     }
 }

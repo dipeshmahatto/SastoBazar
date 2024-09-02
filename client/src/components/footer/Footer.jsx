@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/image/loggo.png";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -18,16 +18,16 @@ const Footer = () => {
               <p className="text-gray-800 text-base">
                 <h2 className="text-gray-900 font-medium my-3">
                   SastoBazar - Your Affordable Online Shopping Destination
-                  Explore{" "}
+                  {" "}
                 </h2>
-                "Quality products at unbeatable prices with secure payments,
+                "Explore Quality products at unbeatable prices with secure payments,
                 fast delivery, and exceptional service."
               </p>
               <div className="flex gap-8 mt-4">
                 <a href="" className="text-cyan-500 duration-300">
                   <FaTwitter className="h-6 w-6" />
                 </a>
-                <a href="https://www.facebook.com" className="text-blue-600 duration-300">
+                <a href="https://www.facebook.com" target="__blank" className="text-blue-600 duration-300">
                   <FaFacebook className="h-6 w-6" />
                 </a>
                 <a href="" className="text-rose-600 duration-300">
@@ -42,12 +42,12 @@ const Footer = () => {
                 </span>
                 <ul className="mt-2 p-0 m-0 text-gray-800">
                   <li className="flex">
-                    <NavLink 
+                    <Link 
                       to="/about-us-details"
                       className="no-underline text-gray-800 py-2 hover:text-orange-600 duration-300 ease-in-out"
                     >
                       About
-                    </NavLink>
+                    </Link>
                   </li>
                   <li className="flex">
                     <a
