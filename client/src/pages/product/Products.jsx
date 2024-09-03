@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ProductCart from "./ProductCart";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -48,21 +49,10 @@ const Products = () => {
           </div>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-24">
           {products &&
             products.map((product) => (
-              <div key={product.id} className="border p-4 rounded-lg shadow-md">
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="w-full h-48 object-cover mb-4 transform transition duration-300 hover:scale-105"
-                />
-                <h2 className="text-lg font-medium">${product.title}</h2>
-                <p className="text-gray-500">{product.price}</p>
-                <button className="mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600">
-                  View Details
-                </button>
-              </div>
+              <ProductCart key={product.id} product={product} />
             ))}
         </div>
       )}
