@@ -36,7 +36,11 @@ const DetailsInfo = () => {
         <p className="px-4">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
           eligendi eveniet facilis veritatis? Cum sapiente sit facere nihil
-          aliquid doloremque consectetur minus obcaecati quas quo?
+          aliquid doloremque consectetur minus obcaecati quas quo? Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Aliquid non ut veniam
+          quod quidem reprehenderit quos. Commodi vero impedit aut architecto
+          voluptatem rem saepe aperiam exercitationem officiis quaerat. Laborum,
+          sequi?
         </p>
       </div>
     </>
