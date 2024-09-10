@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./index.css";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -35,6 +35,11 @@ function App() {
     };
     fetchedData();
   }, []);
+  const mockCartItems = [
+    { id: 1, quantity: 2 },
+    { id: 6, quantity: 1 },
+    { id: 3, quantity: 3 },
+  ];
   return (
     <>
       <Router>
@@ -46,10 +51,17 @@ function App() {
           <Route path="/sastobazar-login" element={<Login />} />
           <Route path="/sastobazar-register" element={<Register />} />
           <Route path="/sastobazar-support" element={<Support />} />
-          <Route path="/sastobazar-cart" element={<Cart />} />
+          <Route
+            path="/sastobazar-cart"
+            element={<Cart cartItems={mockCartItems} products={products} />}
+          />
           <Route path="/about-us-details" element={<AboutUs />} />
           <Route path="/more-info" element={<LearnMore />} />
-          <Route path="/product-view/:id" element={<Productview isLoading={isLoading} products={products} />} />
+          <Route
+            path="/product-view/:id"
+            element={<Productview isLoading={isLoading} products={products} />}
+          />
+
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
